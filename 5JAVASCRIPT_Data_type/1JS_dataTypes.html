@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html>
+<body>
+
+<h2>JavaScript Data Types</h2>
+
+<p>JavaScript has dynamic types. This means that the same variable can be used to hold different data types:</p>
+<p id="demo"></p>
+<script>
+var x;         // Now x is undefined
+x = 5;         // Now x is a Number
+x = "John";      // Now x is a String
+document.getElementById("demo").innerHTML = x;
+</script>
+
+<p>Strings are written with quotes. You can use single or double quotes:</p>
+<p id="demo2"></p>
+<script>
+var carName1 = "Volvo XC60";
+var carName2 = 'Volvo XC60';
+document.getElementById("demo2").innerHTML =
+carName1 + "<br>" +
+carName2;
+</script>
+
+<p>You can use quotes inside a string, as long as they don't match the quotes surrounding the string:</p>
+<p id="demo3"></p>
+<script>
+var answer1 = "It's alright";
+var answer2 = "He is called 'Johnny'";
+var answer3 = 'He is called "Johnny"';
+document.getElementById("demo3").innerHTML =
+answer1 + "<br>" +
+answer2 + "<br>" +
+answer3;
+</script>
+
+<p>Numbers can be written with, or without decimals:</p>
+<p id="demo4"></p>
+<script>
+var x1 = 34.00;
+var x2 = 34;
+var x3 = 3.14;
+document.getElementById("demo4").innerHTML =
+x1 + "<br>" + x2 + "<br>" + x3;
+</script>
+
+<p>Extra large or extra small numbers can be written with scientific (exponential) notation:</p>
+<p id="demo5"></p>
+<script>
+var y = 123e5;
+var z = 123e-5;
+document.getElementById("demo5").innerHTML =
+y + "<br>" + z;
+</script>
+
+<p>Booleans can have two values: true or false:</p>
+<p id="demo"></p>
+<script>
+var x = 5;
+var y = 5;
+var z = 6;
+document.getElementById("demo").innerHTML =
+(x == y) + "<br>" + (x == z);
+</script>
+
+</body>
+</html>
